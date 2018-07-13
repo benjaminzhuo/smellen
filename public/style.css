@@ -1,0 +1,21 @@
+body{
+    background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #f2fcfe, #1c92d2);
+background: -moz-linear-gradient(left, #f2fcfe, #1c92d2);
+background: -o-linear-gradient(left, #f2fcfe, #1c92d2);
+background: linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Roboto;
+    text-align: center;
+}
+
+form{
+    padding: 10 10 10 10;
+}
+.container{
+    background: #f7f7f7;
+    width :350px;
+    margin: 200px auto;
+    border: 2px solid gray;
+    box-shadoww: 0 0 3px rgba(0,0,0, 0.1);
+    padding: 10 10 10 10;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "smellen",
+  "version": "1.0.0",
+  "description": "Helps pick a place",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminzhuo/smellen.git"
+  },
+  "author": "Ben Zhuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminzhuo/smellen/issues"
+  },
+  "homepage": "https://github.com/benjaminzhuo/smellen#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "yelp-fusion": "^2.0.3"
+  }
+}
