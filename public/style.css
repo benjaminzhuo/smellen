@@ -1,38 +1,66 @@
 body{
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: url("background.jpeg") no-repeat center center fixed;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: white;
     text-align: center;
     font-family: 'Indie Flower', cursive;
 }
-
+h1{
+    font-size: 100px;
+    margin-bottom: 0px;
+}
 #left{
     border-radius: 25px 0 0 25px;
-    width:300px;
+    width:150px;
     border:none;
-    height:50px;
+    height:35px;
     outline:none;
-    padding: 0 25px;
-     font-size: 22px;
+    font-size: 22px;
+    padding-left: 10px;
     font-family: 'Indie Flower', cursive;
+    transition: width .75s;
+    margin-right: 0;
     
+}
+#middle{
+    margin-left: 0;
+    width:150px;
+    border:none;
+    height:35px;
+    outline:none;
+    font-size:22px;
+    padding-left: 10px;
+    font-family: 'Indie Flower', cursive;
+    transition: width .75s;
 }
 #right{
     border-radius: 0 25px 25px 0;
-    border: none;
-    width:100px;
+    width:80px;
+    border:none;
+    height:37px;
     outline:none;
-     font-size: 22px;
-    height:50px;
+    font-size: 22px;
     font-family: 'Indie Flower', cursive;
+    transition: width .75s;
+}
+#left:hover{
+    width:200px;
+    
+}
+#middle:hover{
+    width:200px;
+    
 }
 #right:hover{
-    font-size: 22px;
+    width: 100px;
 }
 .container{
     background: none;
     width :800px;
-    margin: 200px auto;
-    border: none;
+    margin: 250px auto;
 }

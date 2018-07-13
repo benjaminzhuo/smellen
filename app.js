@@ -3,8 +3,8 @@ var app = express();
 var request = require("request");
 
 var searchRequest = {
-  term:'Four Barrel Coffee',
-  location: 'san francisco, ca'
+  term:'chinese',
+  location:'11204'
 };
 app.use(express.static(__dirname + '/public'));
 const yelp = require('yelp-fusion');
@@ -19,13 +19,13 @@ app.get("/", function(req, res){
 app.get("/results", function(req, res){
     var firstResult;
     client.search(searchRequest).then(response => {
-        firstResult = response.jsonBody.businesses[0];
+        firstResult = response.jsonBody.businesses[1];
         const prettyJson = JSON.stringify(firstResult, null, 4);
         console.log(prettyJson);
     }).catch(e => {
         console.log(e);
     });
-    //res.render("results", {data: });
+    res.render("results");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
